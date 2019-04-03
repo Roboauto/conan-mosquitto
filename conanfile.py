@@ -43,7 +43,7 @@ class MosquittoConan(ConanFile):
 
     def requirements(self):
         if self.options.with_tls:
-            self.requires.add("OpenSSL/1.0.2o@conan/stable")
+            self.requires.add("OpenSSL/1.1.0g@conan/stable")
         if self.options.with_srv:
             self.requires.add("c-ares/1.14.0@conan/stable")
 
